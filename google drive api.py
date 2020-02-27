@@ -6,7 +6,9 @@ g_login.LocalWebserverAuth()
 drive = GoogleDrive(g_login)
 # Importing os and glob to find all png inside subfolder
 import glob, os
+#040603 is folder name
 os.chdir("040603")
+#below statement retrive all file which is of type jpg
 for file in glob.glob("*.jpg"):
     print(file)
     with open(file,"r") as f:
